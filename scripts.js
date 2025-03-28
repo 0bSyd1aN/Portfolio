@@ -1,11 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("contactForm").addEventListener("submit", function (event) {
+  document.getElementById("contactForm").addEventListener("submit", async function (event) {
       event.preventDefault(); // Prevents default form submission
 
-      // Display success message
-      alert("Your message has been submitted successfully!");
+      let form = this;
+      let formData = new FormData(form);
 
-      // Reset the form
-      this.reset();
+      let statusMessage = document.getElementById("form-status");
+
+      try {
+          let response = await fetch(form.action, {
+              method: "POST",
+              body: formData,
+              headers: {
+                  "Accept": "application/json"
+              }
+          });
+
+          if (response.ok) {
+              statusMessage.innerHTML = "✅ Message sent successfully!";
+              form.reset();
+          } else {
+              statusMessage.innerHTML = "❌ Error sending message. Try again!";
+          }
+      } catch (error) {
+          statusMessage.innerHTML = "⚠️ Network error. Check your connection.";
+      }
   });
 });
