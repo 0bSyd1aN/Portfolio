@@ -1,0 +1,375 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5; /* Soft gray background */
+    color: #222; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+header {
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8b6f47; /* Warm beige tone */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #333; /* Neutral dark gray */
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #8b6f47; /* Beige-brown hover effect */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px; /* Increased padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh; /* Adjusted height for a 17-inch screen */
+}
+
+/* Hero Content */
+.hero-content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px; /* Bigger padding */
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    max-width: 700px; /* Wider content */
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 180px; /* Bigger profile pic */
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #8b6f47;
+}
+
+/* Text Styling */
+.hero-content h2 {
+    font-size: 40px; /* Bigger heading */
+    margin-top: 10px;
+}
+
+.hero-content p {
+    font-size: 22px; /* Bigger description */
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    padding: 15px 30px; /* Bigger button */
+    font-size: 18px;
+}
+
+/* About Me Section */
+.about-me {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+/* Skills & Experience Section */
+.skills-experience {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.skills-experience h2, .skills-experience h3 {
+    color: #8b6f47;
+}
+
+.skills-experience ul, 
+.skills-experience ol, 
+.skills-experience dl {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.skills-experience ul {
+    list-style-type: square;
+}
+
+.skills-experience ol {
+    list-style-type: decimal;
+}
+
+.skills-experience dl dt {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #8b6f47;
+}
+
+.skills-experience dl dd {
+    margin-bottom: 15px;
+}
+
+/* Nested List */
+.skills-experience ul ul {
+    margin-left: 20px;
+    list-style-type: circle;
+}
+
+/* Bio Card */
+.bio-card {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bio-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #8b6f47;
+    margin-bottom: 10px;
+}
+
+.bio-card p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Icons */
+h2 i, h3 i {
+    color: #8b6f47;
+}
+
+/* Blockquote */
+blockquote {
+    font-style: italic;
+    color: #555;
+    padding: 10px;
+    border-left: 4px solid #8b6f47;
+    margin: 20px 0;
+}
+
+/* Code Block */
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+/* List Styles */
+.about-me ul {
+    text-align: left;
+    display: inline-block;
+    list-style-type: square;
+    margin: 15px 0;
+}
+
+.about-me ul li {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Projects Section */
+.projects {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #8b6f47;
+    color: white;
+}
+
+td {
+    background: #f8f8f8;
+}
+
+tr:nth-child(even) td {
+    background: #eee;
+}
+
+tr:hover td {
+    background: #ddd;
+}
+
+/* Footer */
+footer {
+    background: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Contact Form Section */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Buttons */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #8b6f47;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #6f5533;
+}
+
+.btn.reset {
+    background: #ccc;
+    color: #222;
+}
+
+.btn.reset:hover {
+    background: #999;
+}
+
+/* Footer */
+footer {
+    background: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Nested List */
+.skills-experience ul ul {
+    margin-left: 20px;
+    list-style-type: circle;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}

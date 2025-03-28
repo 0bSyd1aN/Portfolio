@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sujan R V</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <h1 class="logo">Sujan R V</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="text-format.html">About</a></li>
+                <li><a href="lists.html">Skills</a></li>
+                <li><a href="tables.html">Projects</a></li>
+                <li><a href="forms.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Have a project or opportunity in mind? Feel free to reach out!</p>
+
+            <form id="contactForm" action="https://formsubmit.co/sujanrv99@gmail.com" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+
+                <label for="inquiry">Type of Inquiry:</label>
+                <select id="inquiry" name="inquiry">
+                    <option value="general">General Inquiry</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="hiring">Hiring Opportunity</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label>Preferred Mode of Contact:</label>
+                <input type="radio" id="emailMode" name="contactMode" value="email" checked>
+                <label for="emailMode">Email</label>
+                
+                <input type="radio" id="phoneMode" name="contactMode" value="phone">
+                <label for="phoneMode">Phone</label>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Subscribe to my updates</label>
+
+                <!-- Hidden fields for better email formatting -->
+                <input type="hidden" name="_subject" value="New Contact Form Submission">
+                <input type="hidden" name="_next" value="thank-you.html">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn">Send Message</button>
+                    <button type="reset" class="btn reset">Reset</button>
+                </div>
+            </form>
+
+            <!-- Display Contact Information -->
+            <div class="contact-info">
+                <h3>Contact Me Directly</h3>
+                <p><strong>Email:</strong> <a href="mailto:sujanrv99@gmail.com">sujanrv99@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+919535993269">+91-9535993269</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Sujan R V | Connect with me on 
+            <a href="https://www.linkedin.com/in/sujan-r-v-2501b4292" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> 
+            | <a href="https://github.com/0bSyd1aN" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </p>
+    </footer>
+
+    <!-- Link JavaScript File -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
